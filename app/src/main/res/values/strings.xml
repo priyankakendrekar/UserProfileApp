@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">FirstProject</string>
+
+    //Activity Names
+    <string name="createProfileActivity">createProfileActivity</string>
+    <string name="searchActivity">searchActivity</string>
+    <string name="viewProfileActivity">viewProfileActivity</string>
+    <string name="changeInfoActivity">changeInfoActivity</string>
+    <string name="startScreenActivity">startScreenActivity</string>
+
+
+    // Buttons
+    <string name="createProfile">CREATE PROFILE</string>
+    <string name="viewProfile">VIEW PROFILE</string>
+    <string name="uploadPhoto">Upload Photo</string>
+    <string name="rotate">Rotate Photo</string>
+    <string name="next">NEXT</string>
+    <string name="modify">MODIFY</string>
+    <string name="exportPdf">Export PDF</string>
+    <string name="finish">FINISH</string>
+    <string name="search">SEARCH</string>
+    <string name="delete">DELETE</string>
+    <string name="update">Update Information</string>
+    <string name="export">Export to PDF</string>
+    <string name="gotostart">Go to Start Screen</string>
+
+
+    //Text Fields
+    <string name="uid">User ID</string>
+    <string name="name">Name</string>
+    <string name="dob">DOB</string>
+    <string name="email">Email ID</string>
+
+    //Window Headings
+    <string name="createProfileInstruction">Please Enter User Information</string>
+    <string name="searchbyHeading">Search By User ID</string>
+    <string name="previewHeading">Profile Preview</string>
+    <string name="profileHeading">User Profile</string>
+    <string name="lookok">Does It Look OK?</string>
+    <string name="addImageTitle">Add Image</string>
+    <string name="pdfHeading">Profile</string>
+
+    //Input Field Hints
+    <string name="searchHint">Enter User ID</string>
+    <string name="nameHint">FirstName LastName</string>
+    <string name="dobHint">Enter DOB ddmmyy</string>
+    <string name="emailHint">Enter Email</string>
+
+    //message
+    <string name="emptyField">Please type something!</string>
+    <string name="afterDeletion">Profile Deleted Successfully!</string>
+    <string name="afterAddition">Profile Added Successfully!</string>
+    <string name="appSettingGalleryPermission">Please select Permissions tab from APP SETTINGS and give Storage permission to FirstProject app</string>
+    <string name="appSettingGalleryNegativeButton">I don\'t want to give storage permission </string>
+    <string name="appSettingCameraPermission">Please select Permissions tab from APP SETTINGS and give Camera permission to FirstProject app</string>
+    <string name="appSettingCameraNegativeButton">I don\'t want to give camera permission </string>
+    <string name="appSettingPdfPermission">Please select Permissions tab from APP SETTINGS and give Write Storage permission to FirstProject app</string>
+    <string name="appSettingPdfNegativeButton">I don\'t want to give Write Storage permission </string>
+    <string name="grantAccessTitle">Grant Access</string>
+
+
+    <string name="permission_denied_gallery">Please ALLOW to use device gallery, in order to upload photo.</string>
+
+
+</resources>

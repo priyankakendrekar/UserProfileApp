@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prapri.firstproject.ViewProfile">
+
+    <TextView
+        android:id="@+id/ac_profile_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Profile Preview"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ac_profile_uid"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="User Id"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ac_profile_heading" />
+
+    <GridLayout
+        android:id="@+id/ac_profile_grid1"
+        android:layout_width="332dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ac_profile_image"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/ac_profile_name"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="15"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ac_profile_nameInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_row="0"
+            android:ems="15"
+            android:text="sample"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:id="@+id/ac_profile_dob"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginBottom="5dp"
+            android:layout_row="1"
+            android:ems="15"
+            android:text="DOB"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ac_profile_email"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginBottom="5dp"
+            android:layout_row="2"
+            android:ems="15"
+            android:text="email"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ac_profile_dobInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_row="1"
+            android:ems="15"
+            android:text="sample"
+            android:textAlignment="viewStart"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ac_profile_emailInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_row="2"
+            android:ems="15"
+            android:text="sample"
+            android:textAlignment="viewStart"
+            android:textSize="14sp" />
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/ac_profile_image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/ac_profile_pdfButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:text="Export PDF"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/ac_profile_modifyButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_gravity="center_vertical"
+            android:layout_row="0"
+            android:text="MODIFY"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/ac_profile_deleteButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_row="1"
+            android:text="DELETE"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/ac_profile_finishButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_gravity="center_vertical"
+            android:layout_row="1"
+            android:text="FINISH"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>
